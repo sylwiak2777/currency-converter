@@ -1,0 +1,53 @@
+.form {
+    padding: 5px;
+}
+
+.form__legend {
+    background-color: rgb(67, 114, 201);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form__label {
+    padding: 10px;
+}
+
+.form__input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form__select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form__button {
+    width: 100%;
+    border: none;
+    background-color: rgb(67, 114, 201);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form__button:hover {
+    background-color: hsl(219, 46%, 50%);
+
+}
+
+.form__button:active {
+    background-color: hsl(219, 46%, 60%);
+}
+
+.form__quote {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.form__outcome {
+    text-align: center;
+}

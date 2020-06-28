@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=4, initial-scale=1.0" />
+  <title>Kalkulator walut</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./container.css" />
+  <link rel="stylesheet" href="./form.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="container__header">Kalkulator walut</h1>
+    <form class="form js-form">
+      <p>
+        <label class="form__label">
+          Wpisz kwotę w PLN*:
+          <input class="js-value form__input" name="currency" type="number" min="0.1" step="any" required />
+        </label>
+      </p>
+      <p>
+        <label class="form__label">Zamień na:
+          <select class="form__select js-currency">
+            <option value="USD">Dolar amerykański (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Funt brytyjski (GBP)</option>
+          </select>
+        </label>
+      </p>
+
+      <button class="form__button">Oblicz</button>
+      <p class="form__quote">
+        Kursy walut pochodzą ze strony www.nbp.pl, dane z dnia 2020-06-19
+      </p>
+      <p class="form__outcome">Kwota: <strong class="js-outcome"></strong></p>
+    </form>
+  </div>
+  <script src="./code.js"></script>
+</body>
+
+</html>
